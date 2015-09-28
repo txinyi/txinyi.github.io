@@ -1,0 +1,178 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Sep 27, 2015, 12:50:56 PM
+    Author     : XY
+*/
+
+/* general text formatting */
+
+body 
+{
+    font-family: Georgia, Cambria, "Times New Roman", serif;
+    font-size: 100%;
+    background-color: #FFF;
+    margin: 0px;
+}
+
+table {
+    width: 100%;
+    font-size: 18pt;
+    border: 0;
+}
+
+td {
+    width: 30%;
+    vertical-align: top;
+    padding: 10px;
+}
+
+header {
+    height: 2em;
+    width: 100%;
+    margin: 0px auto;
+    background: #2F2D2E;
+}
+
+ul {
+    margin: 0;
+}
+
+.header-cont {
+    width:100%;
+    position: fixed;
+    top: 0px;
+    padding: 20px 0px 20px 0px;
+}
+
+/* Navigation */
+nav {
+    float: right;
+    font-size: 20pt;
+}
+
+nav li {
+    display: inline;
+    list-style-type: none;
+    padding-right: 20px;
+}
+
+nav li a{
+    display: inline-block;
+    text-align: center;
+    padding: 5px;
+    border: 1px solid #666;
+}
+
+nav li a:link, a:visited, a:active {
+    color: #99C24D; /*#B977F6*/
+    padding: 0px 10px 0px 10px;
+}
+
+nav li a:hover {
+    padding: 0px 10px 0px 10px;
+}
+
+/* Header */
+h1 {
+    font-family: Arial Black;
+    font-size: 30pt;
+}
+
+/* Links */
+a:link, visited, active {
+    color: #42A8D4;
+}
+
+a:hover {
+    color: #AF1B3F;
+}
+
+/* Image */
+.grow { 
+    transition: all .2s ease-in-out; 
+}
+
+.grow:hover {
+    transform: scale(2.5); 
+}
+
+/* Section Column */
+.left-col {
+    float: left;
+    width: 60%;/*45em;*/
+    padding: 20px;
+    vertical-align: middle;
+    font-size: 18pt;
+}
+
+.right-col {
+    float: right;
+    width: 30em;
+    padding: 20px;
+}
+
+.intro-section {
+    height: 30em;
+    padding-top: 50px;
+    background: #2F2D2E;
+    text-align: center;
+    color: #FFF;
+}
+
+@media only screen and (max-width: 1400px) {    
+    #left-col {
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    .intro-section img {
+        display: none;
+    }
+    
+    #left-col {
+        width: 90%;
+    }
+}
+
+.intro-section img {
+    margin: 1em;
+    width: 25em;
+    height: 25em;
+    -webkit-border-radius: 50%; 
+    -moz-border-radius: 50%; 
+    -ms-border-radius: 50%; 
+    -o-border-radius: 50%; 
+    border-radius: 50%;
+}
+
+.whySIT-section {
+    height: 50%;
+    padding-top: 2em;
+    text-align: center;
+    background: #EEEBD0;
+    font-size: 18pt;
+}
+
+.trip-section {
+    height: 100%;
+    padding: 2em;
+    text-align: center;
+    background: #B5CA8D; 
+    background: transparent url("../Image/IMG_20150315_145921.jpg");
+    background-size: cover;
+    font-size: 18pt;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    vertical-align: center;
+    padding: 10px;
+    font-size: 18pt;
+}
+
