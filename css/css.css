@@ -31,6 +31,10 @@ td {
     padding: 10px;
 }
 
+td>img{
+    width: 60%;
+}
+
 header {
     height: 2em;
     width: 100%;
@@ -84,8 +88,8 @@ h1 {
 }
 
 /* ----- Links ----- */
-a:link, visited, active {
-    color: #42A8D4;
+a:link, a:visited, a:active {
+    color: #99C24D;
 }
 
 a:hover {
@@ -94,15 +98,18 @@ a:hover {
 
 /* ----- Image ----- */
 .grow { 
-    transition: all .2s ease-in-out; 
+    transition: all .3s ease-in-out; 
+    padding: 4px;
 }
 
 .grow:hover {
-    transform: scale(2.5); 
+    transform: scale(2.3); 
+    background: #FFF;
 }
 
+
 /* ----- Intro Section Column ----- */
-.left-col {
+#left-col {
     float: left;
     width: 65%;/*45em;*/
     padding: 20px;
@@ -110,7 +117,7 @@ a:hover {
     font-size: 18pt;
 }
 
-.right-col {
+#right-col {
     float: right;
     width: 30em;
     padding: 20px;
@@ -126,13 +133,13 @@ a:hover {
 
 /* ----- Intro Responsive display Section ----- */
 @media only screen and (max-width: 1600px) {    
-    .left-col {
+    #left-col {
         width: 55%;
     }
 }
 
 @media only screen and (max-width: 1400px) {    
-    .left-col {
+    #left-col {
         width: 42%;
     }
 }
@@ -142,7 +149,7 @@ a:hover {
         display: none;
     }
     
-    .left-col {
+    #left-col {
         width: 90%;
     }
 }
@@ -174,6 +181,21 @@ a:hover {
     background: transparent url("../Image/IMG_20150315_145921.jpg");
     background-size: cover;
     font-size: 18pt;
+}
+
+.trip-section img {
+    width: 10em;
+}
+
+#whitebox{
+    color: #000;
+    background: rgba(255, 255, 255, 0.65);
+    padding: 1em;
+    -webkit-border-radius: 10px; 
+    -moz-border-radius: 10px; 
+    -ms-border-radius: 10px; 
+    -o-border-radius: 10px; 
+    border-radius: 10px;
 }
 
 footer {
