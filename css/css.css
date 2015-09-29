@@ -18,6 +18,7 @@ body
     margin: 0px;
 }
 
+/* ----- Table ----- */
 table {
     width: 100%;
     font-size: 18pt;
@@ -48,7 +49,7 @@ ul {
     padding: 20px 0px 20px 0px;
 }
 
-/* Navigation */
+/* ----- Navigation ----- */
 nav {
     float: right;
     font-size: 20pt;
@@ -76,13 +77,13 @@ nav li a:hover {
     padding: 0px 10px 0px 10px;
 }
 
-/* Header */
+/* ----- Header ----- */
 h1 {
     font-family: Arial Black;
     font-size: 30pt;
 }
 
-/* Links */
+/* ----- Links ----- */
 a:link, visited, active {
     color: #42A8D4;
 }
@@ -91,7 +92,7 @@ a:hover {
     color: #AF1B3F;
 }
 
-/* Image */
+/* ----- Image ----- */
 .grow { 
     transition: all .2s ease-in-out; 
 }
@@ -100,10 +101,10 @@ a:hover {
     transform: scale(2.5); 
 }
 
-/* Section Column */
+/* ----- Intro Section Column ----- */
 .left-col {
     float: left;
-    width: 60%;/*45em;*/
+    width: 65%;/*45em;*/
     padding: 20px;
     vertical-align: middle;
     font-size: 18pt;
@@ -123,18 +124,25 @@ a:hover {
     color: #FFF;
 }
 
-@media only screen and (max-width: 1400px) {    
-    #left-col {
-        width: 50%;
+/* ----- Intro Responsive display Section ----- */
+@media only screen and (max-width: 1600px) {    
+    .left-col {
+        width: 55%;
     }
 }
 
-@media only screen and (max-width: 1100px) {
+@media only screen and (max-width: 1400px) {    
+    .left-col {
+        width: 42%;
+    }
+}
+
+@media only screen and (max-width: 1026px) {
     .intro-section img {
         display: none;
     }
     
-    #left-col {
+    .left-col {
         width: 90%;
     }
 }
@@ -175,4 +183,3 @@ footer {
     padding: 10px;
     font-size: 18pt;
 }
-
