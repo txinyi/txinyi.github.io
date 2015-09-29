@@ -23,16 +23,27 @@ table {
     width: 100%;
     font-size: 18pt;
     border: 0;
+    padding: 10px;
 }
 
 td {
     width: 30%;
     vertical-align: top;
     padding: 10px;
+    text-align: justify;
 }
 
-td>img{
+tr:first-child td {
+    text-align: center;
+}
+
+td>img {
     width: 60%;
+    -webkit-border-radius: 1em; 
+    -moz-border-radius: 1em; 
+    -ms-border-radius: 1em; 
+    -o-border-radius: 1em; 
+    border-radius: 1em;
 }
 
 header {
@@ -47,7 +58,7 @@ ul {
 }
 
 .header-cont {
-    width:100%;
+    width: 100%;
     position: fixed;
     top: 0px;
     padding: 20px 0px 20px 0px;
@@ -73,7 +84,7 @@ nav li a{
 }
 
 nav li a:link, a:visited, a:active {
-    color: #99C24D; /*#B977F6*/
+    color: #99C24D;
     padding: 0px 10px 0px 10px;
 }
 
@@ -111,7 +122,7 @@ a:hover {
 /* ----- Intro Section Column ----- */
 #left-col {
     float: left;
-    width: 65%;/*45em;*/
+    width: 65%;
     padding: 20px;
     vertical-align: middle;
     font-size: 18pt;
@@ -188,7 +199,6 @@ a:hover {
 }
 
 #whitebox{
-    color: #000;
     background: rgba(255, 255, 255, 0.65);
     padding: 1em;
     -webkit-border-radius: 10px; 
@@ -201,7 +211,52 @@ a:hover {
 footer {
     background-color: #333;
     color: #fff;
-    vertical-align: center;
+    vertical-align: middle;
     padding: 10px;
     font-size: 18pt;
+}
+
+/* ----- Zig Zag Border ----- */
+.zigzag {
+  position: relative;
+}
+
+.zigzag:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -10px;
+  width: 100%;
+  height: 10px;
+  left: 0;
+}
+
+.whySIT-section:before {
+  background:
+    linear-gradient(
+      45deg, transparent 33.333%,
+      #EEEBD0 33.333%, #EEEBD0 66.667%,
+      transparent 66.667%
+    ),
+    linear-gradient(
+      -45deg, transparent 33.333%,
+      #EEEBD0 33.333%, #EEEBD0 66.667%,
+      transparent 66.667%
+    );
+  background-size: 25px 50px;
+}
+
+.trip-section:before {
+  background:
+    linear-gradient(
+      45deg, transparent 33.333%,
+      #CEDEED 33.333%, #CEDEED 66.667%,
+      transparent 66.667%
+    ),
+    linear-gradient(
+      -45deg, transparent 33.333%,
+      #CEDEED 33.333%, #CEDEED 66.667%,
+      transparent 66.667%
+    );
+  background-size: 30px 50px;
 }
