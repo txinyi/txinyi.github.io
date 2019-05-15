@@ -1,106 +1,104 @@
-<!-- ICT 1004 Assignment 1 -->
-<!-- 
-- Name: Tan Xin Yi
-- Matri. No: 15SIC044T
-
-Responsive Web Page using HTML and CSS, best view in Google Chrome or Firefox with zoom 90%
--->
-
+<!-- https://codepen.io/nailaahmad/pen/MyZXVE -->
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <title>Welcome, I'm Xinyi!</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
-  <link rel="stylesheet" href="css/css.css" />
-</head>
-<body>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Portfolio">
+        <meta name="keywords" content="Xinyi,Portfolio">
+        <meta name="author" content="Xinyi T.">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Hi, I'm Xinyi!</title>
 
-    <!-- Navigation -->
-    <header class="header-cont">
-    <nav>
-        <ul>
-            <li><a href="#intro">Home</a></li>
-            <li><a href="#whySIT">Why SIT?</a></li>
-            <li><a href="#trip">Memorable Trip</a></li>
-        </ul>
-    </nav>   
-    </header>
-    
-    <!-- Introduction Section -->
-    <section id="intro" class="intro-section">
-            <div id="left-col">
-                <h1>Hello, I'm Xinyi!</h1>
-               I am passionate in Technology especially in the areas of Security and Software Engineering. 
-               My dream is to become a Solutions Architecture as well as an Innovator, to create something out of nothing. 
-               Furthermore, I am also keen to learn and understand Security, be it online or offline. 
-               During leisure, I like to surf nets to pick up new skills, read books for self-enhancement and play League of Legends for entertainment. <br /></div>
-        <div id="right-col"><figure><img src="Image/myPhoto.png" alt="My Image" /></figure></div>
-    </section>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/style.css">
 
-    <!-- Why SIT Section -->
-    <section id="whySIT" class="whySIT-section zigzag">
-        <h1>Why SIT?</h1>
         
-        <table>
-            <tr>
-                <td>
-                    <img src="Image/SIT-Logo-Full-Color-Primary.png" alt="" />
-                </td>
-                <td>
-                    <img src="Image/software.jpg" alt="" />
-                </td>
-                <td>
-                    <img src="Image/hr.jpg" alt="" />
-                </td>        
-            </tr>
-            <tr>
-                <td>
-                    <p>Software Engineering degree is relatively new, where we are still considered as a pioneer batch. 
-                        Thus, being the pioneer batch, we have more opportunity to participate in events and competitions. 
-                        We will be handled in care and have the opportunity to set up a new culture in our degree course.
-                    </p>
-                </td>
-                <td>
-                    <p>SIT has a highly specialized degree on Software Engineering where it builds our core foundation. 
-                        The degree is Industry-focused where it teaches the key aspects of Software Engineering that will be useful to apply in the industry. 
-                        It is Practice-Oriented where focus on deepening the academic knowledge via the use of practical hands-on training to solve real-world problem.
-                    </p>
-                </td>
-                <td>
-                    <p>SIT has Integrated Work Study Programme where we have the opportunity to undertake real work. 
-                        SIT help to develop us into industry-ready graduates. 
-                        SIT new model allow us to deepen our specialist skills and integrate theory and practice in the workforce.
-                    </p>
-                </td>
-            </tr>
-            </table>
-    </section>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+        <script src="js/script.js"></script>
+    </head>
 
-    <!-- Most Recent Memorable Trip Section -->
-    <section id="trip" class="trip-section zigzag">
-        <h1>Recent Memorable Trip</h1>
-        <p id="whitebox">Went to Korea on March 2015 for the last Study Trip before graduation. 
-            It was the start of the spring where the weather is very chilly. 
-            The temperature can go down to 3 degrees Celsius at night. 
-            It was my first time traveling to the cool country and I super love and enjoy the weather there. 
-            The tour guide is very friendly and funny, he brought us to eat the local delicacies, visit local hot places, EverLand and IT companies such as Samsung. 
-            What I love the most about the trip is that we venture out at night(12am onwards) to explore the places and alley. 
-            Even though we are foreign to the places, it is thrilling to walk around without knowing our ways back and contact with others. So fun!</p>
-        <p>
-            <img src="Image/IMG_20150315_144457.jpg" alt="" class="grow" title="Day 1: Mt. Seorak" />
-            <img src="Image/10308201_10152810901007108_3413951845306984019_n.jpg" alt="" class="grow" title="Taking picture with koreas"/>
-            <img src="Image/1426521528030.jpg" alt="" class="grow" title="Venturing out at late night!" />
-            <img src="Image/IMG-20150321-WA0001.jpg" alt="" class="grow" title="Last Day of Korea Trip Group Photo!"/>
-        </p>
+    <body data-spy="scroll" data-target="#navbar-example">
+        <div class="wrapper">
+            <nav class="nav__wrapper" id="navbar-example">
+                <ul class="nav">
+                    <li role="presentation" class="active">
+                        <a href="#section1">
+                            <span class="nav__counter">I'm Xinyi</span>
+                            <h3 class="nav__title">Software Engineer</h3>
+                            <p class="nav__body"></p>
+                        </a>
+                    </li>
+            
+                    <li role="presentation">
+                        <a href="#section2">
+                            <span class="nav__counter">Skills</span>
+                            <h3 class="nav__title">Proficiency</h3>
+                            <p class="nav__body"></p>
+                        </a>
+                    </li>
+          
+                    <li role="presentation">
+                        <a href="#section3">
+                            <span class="nav__counter">Projects</span>
+                            <h3 class="nav__title">Messing around</h3>
+                            <p class="nav__body">Things I do during my free time</p>
+                        </a>
+                    </li>
+                  
+                    <!--<li role="presentation">
+                        <a href="#section4">
+                            <span class="nav__counter">Experience</span>
+                            <h3 class="nav__title">Section 4 Title</h3>
+                            <p class="nav__body">Sed sit amet justo sed odio tempus tempus. Vestibulum sed varius mi, sit amet condimentum lacus.</p>
+                        </a>
+                    </li>-->
+                    
+                    <li role="presentation">
+                        <a href="#section5">
+                            <span class="nav__counter">Education</span>
+                            <h3 class="nav__title">Section 5 Title</h3>
+                            <p class="nav__body"></p>
+                        </a>
+                    </li>
+                    
+                    <li role="presentation">
+                        <a href="#section6">
+                            <span class="nav__counter">Resume</span>
+                            <h3 class="nav__title">Resume</h3>
+                            <p class="nav__body"></p>
+                        </a>
+                    </li>  
+                </ul>
+            </nav>
         
-        <br /><br />  
-    </section>
-    
-    <!-- Footer -->
-    <footer>
-        <p><a href="#intro">Home</a> | <a href="#whySIT">Why SIT?</a> | <a href="#trip">Memorable Trip</a></p>
-        <p><i>Copyright | All Right Reserved @ 2015</i></p>
-    </footer>
-</body>
+
+            <section class="section section1" id="section1">
+                    Graduating student from SIT, degree in ICT (Software Engineering).
+                    I am passionate in Technology especially in the areas of Web/Software Development as well as Security. 
+            </section>
+            
+            <section class="section section2" id="section2">
+                Section 2
+            </section>
+            
+            <section class="section section3" id="section3">
+                Section 3
+            </section>
+            
+            <!--<section class="section section4" id="section4">
+                Section 4
+            </section>-->
+            
+            <section class="section section5" id="section5">
+                Section 5
+            </section>
+            
+            <section class="section section6" id="section6">
+                Section 6
+            </section>
+          
+        </div>
+    </body>
 </html>
