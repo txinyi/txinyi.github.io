@@ -1,145 +1,203 @@
-.wrapper {
-    min-height: 100vh;
-    font-family: 'Roboto Slab', serif;
-    font-weight: 300;
-    color: #fff;
+body, html {
+    height: 100%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+    margin: 0;
+    overflow-x: hidden; 
+    background-color: #CD5360;
+    color: rgba(0,0,0,.8);
+    scroll-behavior: smooth;
+  }
+
+  body { 
     position: relative;
   }
-  section {
-    height: 100vh;
-    font-size: 3rem; 
-    padding-left: 25%;
-    font-family: laos, sans-serif;
-    font-weight: 100;
-    background-color: #22a7f0;
+
+  ::selection {
+    background: #EE7879;
+  }
+  ::-moz-selection {
+    background: #EE7879;
+  }
+
+  .fontHeader {
+    font-weight: 600;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-iteration-count: 1;
+    display: inline-block;
+  }
+  
+  .fontHeader:hover { 
+    color: #EE7879;
+    /* animation: rubberBand 5s infinite; */ 
+    animation-name: rubberBand;
+  } 
+
+  .fontCaption {
+    font-family: 'Courier New', Courier, monospace;
+  }
+
+  #navScrollSpy {   
+  }
+  
+  .cardSection { 
+    height: 70vh; 
+    padding: 2em;  
     display: flex;
     justify-content: center;
-    align-items: center;
+    flex-direction: column;
+    background-color: #CD5360; 
+    color: #FFF;   
   }
-  section:nth-child(1) {
-    background: white;
+
+  .cardFooter { 
+    z-index: 1;
+    bottom: 0;
+    height: 30vh; 
+    color: #FFF;
+    background-color: #F98888;
   }
-  section:nth-child(2) { 
-    background: #f64747;
+
+  .fontDark {
+    color: #FFF !important;
+    font-size: 4em;
   }
-  section:nth-child(3) {
-    background: #22a7f0; 
+
+  .devicon-git-plain {
+    max-width: 5em;
   }
-  section:nth-child(4) {
-    background: #f9690e;
-  }
-  section:nth-child(5) {
-    background: #9b59b6;
-  }
-  section:nth-child(6) {
-    background: #03c9a9;
-  }
-  section:nth-child(7) {
-    background: #fc0;
-  }
-  .nav__wrapper {
-    position: fixed;
-    height: 100%;
-    padding: 30px;
+
+  .cardContact {  
+    text-align: center;
+    color: #FFF; 
+    height: 30vh; 
     display: flex;
-    flex-flow: column nowrap;
-    justify-content: flex-end;
+    justify-content: center;
+    flex-direction: column;
   }
-  .nav {
-    margin: 0 0 100px 30px;
-  }
-  .nav__counter {
-    font-size: 24px;
-    transition: all 0.15s ease-out;
-  }
-  .nav__title {
-    font-size: 32px;
-    font-weight: 300;
-    margin: 0 0 0.25em;
-    width: 300px;
-    height: 0;
-    overflow: hidden;
-    opacity: 0;
-    transition: height 0.3s ease-out, opacity 0.2s ease-out;
-  }
-  .nav__body {
-    font-weight: 100;
-    font-size: 18px;
-    font-size: 18px;
-    width: 300px;
-    height: 0;
-    overflow: hidden;
-    opacity: 0;
-    transition: height 0.3s ease-out, opacity 0.2s ease-out;
-  }
-  .nav li {
-    position: relative;
-    transition: all 0.3s ease-out;
-    margin-bottom: 1em;
-  }
-  .nav li:after {
-    content: '';
-    display: block;
-    border-left: 2px solid white;
-    border-top: 2px solid white;
-    height: 250px;
-    width: 20px;
-    position: absolute;
-    left: -30px;
-    top: 15px;
-  }
-  .nav li a {
-    display: block;
-    padding: 0;
-    color: #fff;
-    transition: all 0.15s ease-out;
-  }
-  .nav li a:hover {
-    background-color: transparent;
-    padding-left: 1em;
-  }
-  .nav li a:focus {
-    background-color: transparent;
-  }
-  .nav li.active {
-    pointer-events: none;
-    padding-left: 1em;
-  }
-  .nav li.active:after {
-    width: 35px;
-    height: 400px;
-    top: 35px;
-  }
-  .nav li.active .nav__counter {
-    font-size: 48px;
-  }
-  .nav li.active .nav__title {
-    height: 40px;
-    opacity: 1;
-    overflow: visible;
-  }
-  .nav li.active .nav__body {
-    height: 100px;
-    opacity: 1;
-    overflow: visible;
-  }
-  
-  /* Media query - hide navigation bar if on mobile nav__wrapper */
-  @media only screen and (max-width: 850px) {
-    section {
-        padding-left: 35%;
-    }
+
+  .cardContact1 {
+    background-color: #EE7879;
   } 
 
-  @media only screen and (max-width: 750px) {
-    .nav__wrapper {
-        visibility: hidden;  
-    }
+  .cardContact2 {
+    background-color: #C39EA0;  
+  }
 
-    section {
-        padding: 1em;
-    }
+  .cardContact3 { 
+    background-color: #EE7879;
   } 
 
+  a.cardContact {   
+    color: #FFF !important;
+  }
+
+  a:hover.cardContact { 
+    cursor: pointer; 
+    background-color: #DF3062; 
+  }
+
+  #home {
+    height: 70vh;
+    margin-left: -14px;
+    padding: 4em 2em 2em 2em;
+    background-color: #CD5360;
+  } 
+
+  #homeFooter {
+    height: 30vh;
+    margin-left: -14px;
+    padding: 4em 2em 2em 2em;
+    background-color: #F8EEE7;
+  } 
+
+  #about {
+    min-height: 100vh;
+    margin-left: -14px;
+    padding: 4em 2em 2em 2em;
+    background-color: #FFF;
+  }  
+
+  #skills {
+    min-height: 100vh;
+    margin-left: -14px;
+    padding: 4em 2em 2em 2em;
+    background-color: #F8EEE7;
+  } 
+
+  #hobby {
+    min-height: 100vh;
+    margin-left: -14px;
+    padding: 4em 2em 2em 2em;
+    background-color: #FFF;
+  } 
   
 
+
+  /* Boostrap Custom */
+  .container-fluid {
+      padding-left: 0;
+      padding-right: 0px;
+  }
+
+  .row.no-gutters {
+    margin-right: 0;
+    margin-left: 0;
+  
+    & > [class^="col-"],
+    & > [class*=" col-"] {
+      padding-right: 0;
+      padding-left: 0;
+    }
+  }
+
+  a {
+    color: #DF3062 !important;
+  } 
+
+  nav > div > ul > li > a { 
+    font-weight: 500 !important;
+    text-transform: capitalize !important;
+    color:rgba(0,0,0,.5) !important;
+    font-size: 1.5em !important;
+    padding: 0.5em 1em 0em 1em !important; 
+  }
+
+  strong {
+    color: #DF3062 !important;
+  }
+
+  i {
+    color: #C39EA0 !important;
+  }
+
+  .navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
+    font-weight: 600 !important;
+  }
+
+
+
+
+  @media only screen and (min-width: 575px) {
+   .cardSection {    
+    height: 100vh;
+    width: 48%; 
+    position: fixed; 
+   }
+
+   .cardFooter {   
+    width: 48%; 
+    position: fixed; 
+   }
+  }
+
+  @media only screen and (max-width: 574px) { 
+   #home {
+    display: none;
+   }
+
+   #homeFooter {
+    display: none;
+   }
+  } 
